@@ -5,20 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./tailwind/tailwind.css" />
+    <script
+      src="https://kit.fontawesome.com/7ac9d32f19.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Home</title>
   </head>
   <body>
-    <nav class="bg-gray-100">
-      <div class="max-w-6xl mx-auto border border-red-400">
-        <div class="flex justify-between">
-          <div class="flex">
-            <div>Logo</div>
-            <div>Main part</div>
+    <nav class="w-full bg-black">
+      <div class="flex justify-between items-center">
+        <div class="flex p-2.5">
+          <div class="px-5">
+            <a href="./index.html"
+              ><img
+                src="./VUA_SUPIT_projektni_zadatak_materials//img//Algebra-logo.png"
+                alt="Algebra Logo"
+                class="h-10"
+            /></a>
           </div>
-          <div>Second part</div>
-          https://www.google.com/search?q=tailwind+navbar&oq=tailwind+nav&aqs=chrome.0.0i512j69i57j0i512l8.3473j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=_tGv9YYPHDebd7_UP25aB8Ac28
+          <div class="hidden md:flex items-center gap-10 font-bold">
+            <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+              ><i class="fas fa-home text-yellow-400"></i> Početna</a
+            >
+            <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+              ><i class="fas fa-address-card text-yellow-400"></i> O nama</a
+            >
+            <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+              ><i class="fas fa-newspaper text-yellow-400"></i> Novosti</a
+            >
+            <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+              ><i class="fas fa-calendar-alt text-yellow-400"></i> Nastavni
+              plan</a
+            >
+            <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+              ><i class="fas fa-envelope text-yellow-400"></i> Kontakt</a
+            >
+          </div>
         </div>
+        <!-- Mobile screen -->
+        <div class="md:hidden">
+          <button class="hamburger">
+            <i class="text-white mr-3 text-2xl fon fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Section -->
+      <div class="mobile-menu hidden flex flex-col items-center">
+        <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+          ><i class="fas fa-home text-yellow-400"></i> Početna</a
+        >
+        <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+          ><i class="fas fa-address-card text-yellow-400"></i> O nama</a
+        >
+        <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+          ><i class="fas fa-newspaper text-yellow-400"></i> Novosti</a
+        >
+        <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+          ><i class="fas fa-calendar-alt text-yellow-400"></i> Nastavni plan</a
+        >
+        <a href="" class="p-1 text-white hover:bg-yellow-700 hover:rounded"
+          ><i class="fas fa-envelope text-yellow-400"></i> Kontakt</a
+        >
       </div>
     </nav>
   </body>
+  <script src="./js/script.js"></script>
 </html>
