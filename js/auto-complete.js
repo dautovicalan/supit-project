@@ -52,15 +52,16 @@ const getSubjectInfo = async (element) => {
 };
 
 const insertInTable = (data) => {
+  const { kolegij, ects, sati, predavanja, vjezbe, tip, semestar } = data;
   let createTableRow = `
     <tr>
-        <td>${data.kolegij}</td>
-        <td>${data.ects}</td>
-        <td>${data.sati}</td>
-        <td>${data.predavanja}</td>
-        <td>${data.vjezbe}</td>
-        <td>${data.tip}</td>
-        <td>${data.semestar}</td>
+        <td>${kolegij}</td>
+        <td>${ects}</td>
+        <td>${sati}</td>
+        <td>${predavanja}</td>
+        <td>${vjezbe}</td>
+        <td>${tip}</td>
+        <td>${semestar}</td>
         <td><input type="button" value="Izbrisi" onclick="removeItem(event)" class="bg-red-500 text-white p-2 rounded-lg text-lg hover:cursor-pointer"/></td>
     </tr>
   `;
