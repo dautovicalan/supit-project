@@ -1,0 +1,30 @@
+.line {
+  font-size: 5.5vw;
+  text-align: center;
+  border-right: solid 2px rgba(255, 255, 255, 0.7);
+  text-shadow: 2px 2px black;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 27ch;
+  animation: typewriter 6s steps(28) 1s, cursor 400ms steps(28) infinite;
+  z-index: 1;
+  color: white;
+}
+/* typewriter animation */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 27ch;
+  }
+}
+/* cursor animation */
+@keyframes cursor {
+  0% {
+    border-right-color: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
