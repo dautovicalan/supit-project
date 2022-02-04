@@ -26,3 +26,4 @@ window.onclick = (e) => {
     modal.classList.toggle("hidden");
   }
 };
+

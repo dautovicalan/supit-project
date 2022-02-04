@@ -88,6 +88,44 @@
       </div>
     </nav>
 
+    <div class="pt-32 flex flex-col items-center">
+      <h2 class="text-black text-4xl">Nastavni plan</h2>
+    </div>
+    <div class="flex flex-row justify-around pt-12">
+      <div class="flex flex-col">
+        <label for="search-subject">Unesi Predmet:</label>
+        <input
+          type="search"
+          id="search-subject"
+          placeholder="Unesi ime predmeta..."
+          class="w-auto p-3 rounded-lg resize-y mb-3 border-2 border-black"
+        />
+        <div id="match-list"></div>
+      </div>
+      <table class="subject-table">
+        <thead>
+          <tr>
+            <th>KOLEGIJ</th>
+            <th>ECTS</th>
+            <th>SATI</th>
+            <th>PREDAVANJA</th>
+            <th>VJEZBE</th>
+            <th>TIP</th>
+            <th>SEMESTAR</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <th>UKUPNO</th>
+            <th id="ects">0</th>
+            <th id="hours">0</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
     <!-- Modal Windows for Contact -->
     <div class="contact-modal hidden">
       <div
@@ -157,4 +195,5 @@
     </div>
   </body>
   <script src="../js/script.js"></script>
+  <script src="../js/auto-complete.js"></script>
 </html>
