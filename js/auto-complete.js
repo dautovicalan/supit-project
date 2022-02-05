@@ -77,18 +77,14 @@ const removeItem = (event) => {
 
 const calculateValues = () => {
   let table = document.querySelector(".subject-table");
-  let ects = Array.from(table.rows)
-    .slice(1)
-    .reduce((total, row) => {
-      return total + parseFloat(row.cells[1].innerHTML);
-    }, 0);
-
-  let hours = Array.from(table.rows)
-    .slice(2)
-    .reduce((total, row) => {
-      return total + parseFloat(row.cells[2].innerHTML);
-    }, 0);
-
+  let ects = 0;
+  let hours = 0;
+  for (let i = 1; i < table.rows.length-1; i++) {
+    console.log(table.rows[i].cells[1].innerHTML);
+    ects += parseInt(table.rows[i].cells[1].innerHTML);
+    hours += parseInt(table.rows[i].cells[2].innerHTML);
+  }
+  console.log(ects, hours);
   document.querySelector("#ects").textContent = ects;
   document.querySelector("#hours").textContent = hours;
 };
