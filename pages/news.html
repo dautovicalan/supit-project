@@ -32,7 +32,7 @@
               ><i class="fas fa-home text-yellow-400"></i> Početna</a
             >
             <a
-              href="./pages/about-us.html"
+              href="./about-us.html"
               class="p-1 text-white hover:bg-yellow-700 hover:rounded"
               ><i class="fas fa-address-card text-yellow-400"></i> O nama</a
             >
@@ -42,7 +42,7 @@
               ><i class="fas fa-newspaper text-yellow-400"></i> Novosti</a
             >
             <a
-              href="./pages/subject-plan.html"
+              href="./subject-plan.html"
               class="p-1 text-white hover:bg-yellow-700 hover:rounded"
               ><i class="fas fa-calendar-alt text-yellow-400"></i> Nastavni
               plan</a
@@ -68,7 +68,7 @@
           ><i class="fas fa-home text-yellow-400"></i> Početna</a
         >
         <a
-          href="./about-us.html"
+          href="./pages/about-us.html"
           class="p-1 text-white hover:bg-yellow-700 hover:rounded"
           ><i class="fas fa-address-card text-yellow-400"></i> O nama</a
         >
@@ -88,43 +88,42 @@
       </div>
     </nav>
 
-    <div class="pt-32 flex flex-col items-center">
-      <h2 class="text-black text-4xl">Nastavni plan</h2>
+    <div class="pt-24 flex flex-col items-center">
+      <h2 class="text-black text-4xl">Novosti</h2>
       <div class="border-2 border-red-500 w-1/2 rounded mt-8"></div>
     </div>
+
     <div class="flex flex-row justify-around pt-12">
-      <div class="flex flex-col">
-        <label for="search-subject">Unesi Predmet:</label>
-        <input
-          type="search"
-          id="search-subject"
-          placeholder="Unesi ime predmeta..."
-          class="w-auto p-3 rounded-lg resize-y mb-3 border-2 border-black"
+      <div
+        class="relative overflow-hidden rounded-full shadow-xl shadow-gray-700 border-8 border-orange-300"
+        style="height: 280px; width: 280px"
+      >
+        <img
+          src="../VUA_SUPIT_projektni_zadatak_materials/img/novost1.jpg"
+          alt="News 1"
+          class="w-auto h-full object-cover"
         />
-        <div id="match-list"></div>
       </div>
-      <table class="subject-table">
-        <thead>
-          <tr>
-            <th>KOLEGIJ</th>
-            <th>ECTS</th>
-            <th>SATI</th>
-            <th>PREDAVANJA</th>
-            <th>VJEZBE</th>
-            <th>TIP</th>
-            <th>SEMESTAR</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-        <tfoot>
-          <tr>
-            <th>UKUPNO</th>
-            <th id="ects">0</th>
-            <th id="hours">0</th>
-          </tr>
-        </tfoot>
-      </table>
+      <div
+        class="relative overflow-hidden rounded-full shadow-xl shadow-gray-700 border-8 border-orange-200"
+        style="height: 280px; width: 280px"
+      >
+        <img
+          src="../VUA_SUPIT_projektni_zadatak_materials/img/novost2.jpg"
+          alt="News 1"
+          class="w-auto h-full object-cover"
+        />
+      </div>
+      <div
+        class="relative overflow-hidden rounded-full shadow-xl shadow-gray-700 border-8 border-orange-200"
+        style="height: 280px; width: 280px"
+      >
+        <img
+          src="../VUA_SUPIT_projektni_zadatak_materials/img/novost3.jpg"
+          alt="News 1"
+          class="w-auto h-full object-cover"
+        />
+      </div>
     </div>
 
     <!-- Modal Windows for Contact -->
@@ -196,5 +195,4 @@
     </div>
   </body>
   <script src="../js/script.js"></script>
-  <script src="../js/auto-complete.js"></script>
 </html>
