@@ -10,7 +10,15 @@ module.exports = {
       6: "6px",
       8: "15px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        "custom-font": ['"Supermercado One"', "cursive"],
+      },
+      backgroundImage: {
+        "kako-do-nas":
+          "url('../VUA_SUPIT_projektni_zadatak_materials/img/kakoDoNas.jpg')",
+      },
+    },
   },
   plugins: [],
 };

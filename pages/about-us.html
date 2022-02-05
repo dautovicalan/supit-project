@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../tailwind/tailwind.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/7ac9d32f19.js"
       crossorigin="anonymous"
@@ -102,17 +109,19 @@
     </div>
 
     <div class="nase-vrijednosti flex flex-col items-center gap-16 mt-10">
-      <h3 class="text-4xl font-bold text-orange-600">Naše vrijednosti</h3>
+      <h3 class="text-4xl font-bold text-orange-600">
+        <i class="fas fa-bolt"></i> Naše vrijednosti
+      </h3>
       <div
         class="w-full mx-auto flex flex-col gap-14 pl-32 pr-32 pt-24 pb-24 bg-gray-500"
       >
-        <p class="text-2xl">
+        <p class="text-2xl font-custom-font">
           Obećajemo pomoć u pronalasku onoga što voliš raditi i da ćemo te
           poticati na izvrsnost - kvalitetom programa i procesa, strastvenim
           predavačima, globalno aplikabilnim znanjem te poticanjem kvalitete
           života.
         </p>
-        <p class="text-2xl">
+        <p class="text-2xl font-custom-font">
           Postoje vrijednosti u koje vjerujemo od prvog dana, koje dijele naši
           predavači, ali i naši polaznici, bez obzira imaju li oni 7 ili 77
           godina. Pomno smo odabrali atribute koji su odraz tih naših
@@ -121,8 +130,8 @@
         </p>
       </div>
       <div class="flex flex-row justify-evenly gap-5 pl-16 pr-16">
-        <div class="border-2 border-black w-1/3 p-6">
-          <h4>SPECIJALIZIRANO I KVALITETNO</h4>
+        <div class="border-2 border-black w-1/3 p-6 rounded">
+          <h4 class="text-xl font-bold">SPECIJALIZIRANO I KVALITETNO</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Svi naši nastavni programi i procesi baziraju se na globalnim
@@ -135,8 +144,8 @@
             napreduje u roku 3 mjeseca nakon završetka programa.
           </p>
         </div>
-        <div class="border-2 border-black w-1/3 p-6">
-          <h4>IZBALANSIRANO</h4>
+        <div class="border-2 border-black w-1/3 p-6 rounded">
+          <h4 class="text-xl font-bold">IZBALANSIRANO</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Obrazovanje za nas podrazumijeva akademsku, ali i društvenu
@@ -149,8 +158,8 @@
             kvalitetnog vremena koje odvajamo za sebe.
           </p>
         </div>
-        <div class="border-2 border-black w-1/3 p-6">
-          <h4>IZVRSNO</h4>
+        <div class="border-2 border-black w-1/3 p-6 rounded">
+          <h4 class="text-xl font-bold">IZVRSNO</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Izvrsnost je ključna emocionalna diferencijacija našeg branda –
@@ -169,15 +178,17 @@
     </div>
 
     <div class="history-container flex flex-col items-center gap-16 mt-10">
-      <h3 class="text-4xl font-bold text-orange-600">Povijest</h3>
+      <h3 class="text-4xl font-bold text-orange-600">
+        <i class="fas fa-history"></i> Povijest
+      </h3>
       <div
         class="w-full mx-auto flex flex-col gap-14 pl-32 pr-32 pt-24 pb-24 bg-gray-500"
       >
-        <p class="text-2xl">
+        <p class="text-2xl font-custom-font">
           Zajedno gradimo povijest Algebre. Počeli smo prije gotovo dvadeset
           godina i s tobom nastavljamo put prema novim uspjesima.
         </p>
-        <p class="text-2xl">
+        <p class="text-2xl font-custom-font">
           Otvorili smo Algebra LAB, jedinstveni inovacijski centar koji pomaže
           tvrtkama, javnim službama i start-up projektima razviti inovativna
           poslovna rješenja koja će potaknuti konkurentnost gospodarstva.
@@ -191,7 +202,10 @@
       </div>
       <div class="grid grid-cols-3 gap-4 pl-16 pr-16">
         <div class="border-2 border-black p-6">
-          <h4>Osnovan Algebra d.o.o. – poduzeće za obrazovanje odraslih</h4>
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">1998.</span> - Osnovan Algebra d.o.o. –
+            poduzeće za obrazovanje odraslih
+          </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Algebra d.o.o. osnovana je u travnju 1998. godine kao poduzeće za
@@ -204,7 +218,10 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4>Microsoft Authorized Training Center (ATC)</h4>
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">2000.</span> - Microsoft Authorized
+            Training Center (ATC)
+          </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Nakon dosta napora i truda uvjerili smo 2000 godine lokalni ured
@@ -218,7 +235,10 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4>Macromedia i Autodesk traning ceneter</h4>
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">2001.</span> - Macromedia i Autodesk
+            traning ceneter
+          </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Potaknuti uspjehom dobivanja Microsoft akreditacije, u 2001 godini
@@ -230,7 +250,9 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4>Osnovano Učilište Algebra</h4>
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">2002.</span> - Osnovano Učilište Algebra
+          </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Početkom 2002. godine Algebra d.o.o. osniva Učilište Algebra, a iste
@@ -242,7 +264,10 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4>Učilište Algebra postalo vodeći ponuđač obrazovanja u IT-u</h4>
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">2003.</span> - Učilište Algebra postalo
+            vodeći ponuđač obrazovanja u IT-u
+          </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Uvođenjem niza novih programa obrazovanja odraslih u akreditiranih
@@ -255,7 +280,10 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4>Visoko učilište Algebra dobiva akreditaciju</h4>
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">2007.</span> - Visoko učilište Algebra
+            dobiva akreditaciju
+          </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Nakon više od 2 godine intenzivnih priprema, krajem 2007. je
@@ -270,8 +298,9 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4>
-            Izvrsni rezultati u europskim projektima, kvaliteta i dalje u fokusu
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">2013.</span> - Izvrsni rezultati u
+            europskim projektima, kvaliteta i dalje u fokusu
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
@@ -286,8 +315,9 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4>
-            Izvrsni rezultati u europskim projektima, kvaliteta i dalje u fokusu
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">2015.</span> - Izvrsni rezultati u
+            europskim projektima, kvaliteta i dalje u fokusu
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
@@ -302,108 +332,167 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-            <h4>
-                Pokrećemo MBA e-leadership studij – doing business
-                in digital economy              
-            </h4>
-              <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
-              <p>
-                U svoj sustav pripojili smo jednu od prvih hrvatskih
-                poslovnih škola: International Graduate Business
-                School (IgBS Zagreb) a u svoj program uvodimo i
-                diplomski MBA studij eLeadershipa (eVođenja) na
-                engleskom jeziku. Ovaj studij u većem dijelu izvode
-                nastavnici s University of Indiana, Kelley School of
-                Business, jedne od pet vodećih američkih poslovnih
-                škola prema uglednom poslovnom časopisu Bloomberg,
-                dok su pojedine specifične teme rezervirane za
-                hrvatske i europske profesore.
-              </p>
-            </div>
+          <h4 class="text-xl font-bold">
+            <span class="text-blue-500">2016.</span> - Pokrećemo MBA
+            e-leadership studij – doing business in digital economy
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <p>
+            U svoj sustav pripojili smo jednu od prvih hrvatskih poslovnih
+            škola: International Graduate Business School (IgBS Zagreb) a u svoj
+            program uvodimo i diplomski MBA studij eLeadershipa (eVođenja) na
+            engleskom jeziku. Ovaj studij u većem dijelu izvode nastavnici s
+            University of Indiana, Kelley School of Business, jedne od pet
+            vodećih američkih poslovnih škola prema uglednom poslovnom časopisu
+            Bloomberg, dok su pojedine specifične teme rezervirane za hrvatske i
+            europske profesore.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="algebra-grupa flex flex-col items-center gap-16 mt-10">
-        <h3 class="text-4xl font-bold text-orange-600">Algebra grupa</h3>
-        <div
+      <h3 class="text-4xl font-bold text-orange-600">
+        <i class="fas fa-users"></i> Algebra grupa
+      </h3>
+      <div
         class="w-full mx-auto flex flex-col gap-14 pl-32 pr-32 pt-24 pb-24 bg-gray-500"
       >
-        <p class="text-2xl">
-            Algebra grupa je vodeći hrvatski i regionalni
-            privatni obrazovni sustav prisutan u 30 gradova
-            diljem Republike Hrvatske, s više od 120 stalno
-            zaposlenih i više od 400 vanjskih suradnika.
+        <p class="text-2xl font-custom-font">
+          Algebra grupa je vodeći hrvatski i regionalni privatni obrazovni
+          sustav prisutan u 30 gradova diljem Republike Hrvatske, s više od 120
+          stalno zaposlenih i više od 400 vanjskih suradnika.
         </p>
-        <p class="text-2xl">
-            Kroz proteklih gotovo 20 godina rada, Algebra je
-            postala najznačajniji regionalni edukacijski
-            partner tvrtki Microsoft, Cisco, Adobe,
-            Autodesk, ECDL, VMware, EC-Council i drugih. U
-            obrazovanju odraslih školujemo oko 18.000
-            polaznika seminara i programa obrazovanja
-            godišnje, dok u visokom obrazovanju upisujemo
-            svake godine više od 300 novih studenata.
-            Kvalitetu poslovanja Algebre prepoznali su kako
-            naši klijenti tako i svi značajniji proizvođači
-            softvera, a dokazuje ga i implementirani ISO
-            9001:2000 certifikat koji smo uveli još 2004.
-            godine.
+        <p class="text-2xl font-custom-font">
+          Kroz proteklih gotovo 20 godina rada, Algebra je postala najznačajniji
+          regionalni edukacijski partner tvrtki Microsoft, Cisco, Adobe,
+          Autodesk, ECDL, VMware, EC-Council i drugih. U obrazovanju odraslih
+          školujemo oko 18.000 polaznika seminara i programa obrazovanja
+          godišnje, dok u visokom obrazovanju upisujemo svake godine više od 300
+          novih studenata. Kvalitetu poslovanja Algebre prepoznali su kako naši
+          klijenti tako i svi značajniji proizvođači softvera, a dokazuje ga i
+          implementirani ISO 9001:2000 certifikat koji smo uveli još 2004.
+          godine.
         </p>
       </div>
       <div class="grid grid-cols-4 gap-4 pl-16 pr-16">
         <div class="border-2 border-black p-4">
-            <h4>EC-Council Accredited Training Center - kreditirani
-                trening centar
-            </h4>
-            <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <h4 class="text-xl font-bold">
+            EC-Council Accredited Training Center - kreditirani trening centar
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
         </div>
         <div class="border-2 border-black p-4">
-            <h4>Cisco Networking Academy, Cisco akademija mrežnih
-                tehnologija
-            </h4>
-            <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <h4 class="text-xl font-bold">
+            Cisco Networking Academy, Cisco akademija mrežnih tehnologija
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
         </div>
         <div class="border-2 border-black p-4">
-            <h4>VUE Ispitni centar za testiranje kandidata</h4>
-            <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <h4 class="text-xl font-bold">
+            VUE Ispitni centar za testiranje kandidata
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
         </div>
         <div class="border-2 border-black p-4">
-            <h4>Autodesk trening centar za AutoCAD, Inventor i 3D
-                Studio alate
-            </h4>
-            <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <h4 class="text-xl font-bold">
+            Autodesk trening centar za AutoCAD, Inventor i 3D Studio alate
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
         </div>
         <div class="border-2 border-black p-4">
-            <h4>Adobe autorizirani trening partner za grafičke i web
-                aplikacije
-            </h4>
-            <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <h4 class="text-xl font-bold">
+            Adobe autorizirani trening partner za grafičke i web aplikacije
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
         </div>
         <div class="border-2 border-black p-4">
-            <h4>Microsoft Gold Certified Partner for Learning
-                Solutions
-            </h4>
-            <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <h4 class="text-xl font-bold">
+            Microsoft Gold Certified Partner for Learning Solutions
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
         </div>
         <div class="border-2 border-black p-4">
-            <h4>Red Hat Akademija – podržava nastavu i
-                certifikacijske ispite
-            </h4>
-            <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <h4 class="text-xl font-bold">
+            Red Hat Akademija – podržava nastavu i certifikacijske ispite
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
         </div>
         <div class="border-2 border-black p-4">
-            <h4>Oracle Approved Education Center – provedba službene
-                Oracle edukacije
-            </h4>
-            <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <h4 class="text-xl font-bold">
+            Oracle Approved Education Center – provedba službene Oracle
+            edukacije
+          </h4>
+          <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
         </div>
-      </div>  
+      </div>
     </div>
 
     <div class="kako-do-nas flex flex-col items-center gap-16 mt-10">
-        <h3 class="text-4xl font-bold text-orange-600">Kako do nas?</h3>
-    </div> 
+      <h3 class="text-4xl font-bold text-orange-600">
+        <i class="far fa-compass"></i> Kako do nas?
+      </h3>
+      <div class="grid grid-cols-2 pl-16 pr-16 gap-4 bg-kako-do-nas">
+        <div class="border-2 border-black p-4 rounded bg-white">
+          <h4 class="mb-6 text-xl font-bold">
+            <i class="fas fa-location-arrow"></i> Lokacija
+          </h4>
+          <p class="pl-8 pr-8">
+            Algebra se nalazi u okviru kampusa Hrvatskog katoličkog sveučilišta
+            (HKS) u Zagrebu, na adresi Ilica 242. Ulaz u kampus smješten je u
+            Domobranskoj ulici. Unutar kampusa, Algebra djeluje na dvije
+            lokacije: u novoobnovljenoj zgradi s početka 20. stoljeća koja se
+            prostire na više od 3500 četvornih metara, te na 2. katu suvremene
+            nove poslovne zgrade koja se nalazi u neposrednoj blizini.
+          </p>
+          <h4 class="mb-6 mt-6 text-xl font-bold">
+            <i class="far fa-compass"></i> Kako do nas?
+          </h4>
+          <p class="pl-8 pr-8">
+            Algebra je smještena u zapadnom dijelu grada Zagreba, na sto metara
+            udaljenosti od tramvajske stanice Sv. Duh i na15-ak km udaljenosti
+            od zagrebačke zračne luke.
+          </p>
+        </div>
+        <div class="border-2 border-black p-4 rounded bg-white">
+          <h4 class="mb-6 text-xl font-bold">
+            <i class="fas fa-bus"></i> Javni prijevoz
+          </h4>
+          <p class="pl-8 pr-8">
+            Od glavnog trga, Trga bana Jelačića, udaljena je 6 tramvajskih
+            stanica vožnje, linijama 6 i 11 u smjeru Črnomerca. Od Glavnog
+            željezničkog kolodvora udaljena je 8 stanica vožnje tramvajskom
+            linijom 6, također u smjeru Črnomerca.
+          </p>
+          <h4 class="mb-6 mt-6 text-xl font-bold">
+            <i class="fas fa-car"></i> Osobno vozilo
+          </h4>
+          <p class="pl-8 pr-8">
+            O informacije o dolasku automobilom iz smjera Slavonska avenija
+            dostupne su ovdje, iz smjera Zagrebačke avenije ovdje, a iz smjera
+            Jadranske avenije
+          </p>
+          <h4 class="mb-6 mt-6 text-xl font-bold">
+            <i class="fas fa-parking"></i> Parking
+          </h4>
+          <p class="pl-8 pr-8">
+            Unutar kampusa posjetiteljima je na raspolaganju otvoreni parking
+            koji se naplaćuje 4 kune po satu, dok se izvan kampusa nalazi III.
+            parkirna zona Zagrebparkinga.
+          </p>
+        </div>
+        <div class="col-span-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31459.98835279761!2d15.912104774727695!3d45.81733860367186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6d74e265877%3A0x1a4f4eae9fc461c5!2sAlgebra%20University%20College!5e0!3m2!1sen!2shr!4v1644094551332!5m2!1sen!2shr"
+            width="100%"
+            height="450"
+            style="border: 2px solid black"
+            allowfullscreen="true"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
     <footer
       class="bg-yellow-700 w-full h-72 overflow-hidden mt-40 flex flex-col items-center justify-center md:items-center text-2xl md:justify-center md:text-5xl"
