@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -60,6 +60,14 @@
             >
           </div>
         </div>
+        <div class="font-bold hidden flex-row gap-16 pr-16 2xl:flex">
+          <a href="#nasevrijednosti" class="text-orange-500"
+            >Naše vrijednosti</a
+          >
+          <a href="#povijest" class="text-orange-500">Povijest</a>
+          <a href="#algebragrupa" class="text-orange-500">Algebra grupa</a>
+          <a href="#kakodonas" class="text-orange-500">Kako do nas?</a>
+        </div>
         <!-- Mobile screen -->
         <div class="md:hidden">
           <button class="hamburger">
@@ -68,7 +76,7 @@
         </div>
       </div>
       <!-- Mobile Section -->
-      <div class="mobile-menu md:hidden flex flex-col items-center">
+      <div class="mobile-menu hidden md:hidden flex flex-col items-center">
         <a
           href="./index.html"
           class="p-1 text-white hover:bg-yellow-700 hover:rounded"
@@ -92,6 +100,10 @@
         <a class="open-button p-1 text-white hover:bg-yellow-700 hover:rounded"
           ><i class="fas fa-envelope text-yellow-400"></i> Kontakt</a
         >
+        <a href="#nasevrijednosti" class="text-orange-500">Naše vrijednosti</a>
+        <a href="#povijest" class="text-orange-500">Povijest</a>
+        <a href="#algebragrupa" class="text-orange-500">Algebra grupa</a>
+        <a href="#kakodonas" class="text-orange-500">Kako do nas?</a>
       </div>
     </nav>
 
@@ -109,19 +121,17 @@
     </div>
 
     <div class="nase-vrijednosti flex flex-col items-center gap-16 mt-10">
-      <h3 class="text-4xl font-bold text-orange-600">
+      <h3 class="text-4xl font-bold text-orange-600 pt-20" id="nasevrijednosti">
         <i class="fas fa-bolt"></i> Naše vrijednosti
       </h3>
-      <div
-        class="w-full mx-auto flex flex-col gap-14 pl-32 pr-32 pt-24 pb-24 bg-gray-500"
-      >
-        <p class="text-2xl font-custom-font">
+      <div class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500">
+        <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Obećajemo pomoć u pronalasku onoga što voliš raditi i da ćemo te
           poticati na izvrsnost - kvalitetom programa i procesa, strastvenim
           predavačima, globalno aplikabilnim znanjem te poticanjem kvalitete
           života.
         </p>
-        <p class="text-2xl font-custom-font">
+        <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Postoje vrijednosti u koje vjerujemo od prvog dana, koje dijele naši
           predavači, ali i naši polaznici, bez obzira imaju li oni 7 ili 77
           godina. Pomno smo odabrali atribute koji su odraz tih naših
@@ -129,8 +139,8 @@
           našem brandu.
         </p>
       </div>
-      <div class="flex flex-row justify-evenly gap-5 pl-16 pr-16">
-        <div class="border-2 border-black w-1/3 p-6 rounded">
+      <div class="flex flex-col justify-evenly gap-5 pl-16 pr-16 lg:flex-row">
+        <div class="border-2 border-black w-full p-6 rounded lg:w-1/3">
           <h4 class="text-xl font-bold">SPECIJALIZIRANO I KVALITETNO</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
@@ -144,7 +154,7 @@
             napreduje u roku 3 mjeseca nakon završetka programa.
           </p>
         </div>
-        <div class="border-2 border-black w-1/3 p-6 rounded">
+        <div class="border-2 border-black w-full p-6 rounded lg:w-1/3">
           <h4 class="text-xl font-bold">IZBALANSIRANO</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
@@ -158,7 +168,7 @@
             kvalitetnog vremena koje odvajamo za sebe.
           </p>
         </div>
-        <div class="border-2 border-black w-1/3 p-6 rounded">
+        <div class="border-2 border-black w-full p-6 rounded lg:w-1/3">
           <h4 class="text-xl font-bold">IZVRSNO</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
@@ -178,17 +188,15 @@
     </div>
 
     <div class="history-container flex flex-col items-center gap-16 mt-10">
-      <h3 class="text-4xl font-bold text-orange-600">
+      <h3 class="text-4xl font-bold text-orange-600 pt-20" id="povijest">
         <i class="fas fa-history"></i> Povijest
       </h3>
-      <div
-        class="w-full mx-auto flex flex-col gap-14 pl-32 pr-32 pt-24 pb-24 bg-gray-500"
-      >
-        <p class="text-2xl font-custom-font">
+      <div class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500">
+        <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Zajedno gradimo povijest Algebre. Počeli smo prije gotovo dvadeset
           godina i s tobom nastavljamo put prema novim uspjesima.
         </p>
-        <p class="text-2xl font-custom-font">
+        <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Otvorili smo Algebra LAB, jedinstveni inovacijski centar koji pomaže
           tvrtkama, javnim službama i start-up projektima razviti inovativna
           poslovna rješenja koja će potaknuti konkurentnost gospodarstva.
@@ -200,7 +208,7 @@
           mjesto je za inovacije, kreacije, ideje i snove o budućnosti.
         </p>
       </div>
-      <div class="grid grid-cols-3 gap-4 pl-16 pr-16">
+      <div class="grid grid-cols-1 gap-4 pl-16 pr-16 lg:grid-cols-3">
         <div class="border-2 border-black p-6">
           <h4 class="text-xl font-bold">
             <span class="text-blue-500">1998.</span> - Osnovan Algebra d.o.o. –
@@ -218,10 +226,8 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4 class="text-xl font-bold">
-            <span class="text-blue-500">2000.</span> - Microsoft Authorized
-            Training Center (ATC)
-          </h4>
+          <!-- prettier-ignore -->
+          <h4 class="text-xl font-bold whitespace-pre-wrap"><span class="text-blue-500">2000.</span>  -  Microsoft   Authorized    Training   Center  (ATC)</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Nakon dosta napora i truda uvjerili smo 2000 godine lokalni ured
@@ -235,10 +241,8 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4 class="text-xl font-bold">
-            <span class="text-blue-500">2001.</span> - Macromedia i Autodesk
-            traning ceneter
-          </h4>
+          <!-- prettier-ignore -->
+          <h4 class="text-xl font-bold whitespace-pre-wrap"><span class="text-blue-500">2001.</span>   -   Macromedia    i    Autodesk    traning    ceneter</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Potaknuti uspjehom dobivanja Microsoft akreditacije, u 2001 godini
@@ -250,9 +254,9 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4 class="text-xl font-bold">
-            <span class="text-blue-500">2002.</span> - Osnovano Učilište Algebra
-          </h4>
+          <!-- prettier-ignore -->
+          <h4 class="text-xl font-bold whitespace-pre-wrap"><span class="text-blue-500">2002.</span> - Osnovano Učilište 
+Algebra</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Početkom 2002. godine Algebra d.o.o. osniva Učilište Algebra, a iste
@@ -280,10 +284,8 @@
           </p>
         </div>
         <div class="border-2 border-black p-6">
-          <h4 class="text-xl font-bold">
-            <span class="text-blue-500">2007.</span> - Visoko učilište Algebra
-            dobiva akreditaciju
-          </h4>
+          <!-- prettier-ignore -->
+          <h4 class="text-xl font-bold whitespace-pre-wrap"><span class="text-blue-500">2007.</span>   -   Visoko   učilište   Algebra   dobiva   akreditaciju</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
           <p>
             Nakon više od 2 godine intenzivnih priprema, krajem 2007. je
@@ -352,18 +354,16 @@
     </div>
 
     <div class="algebra-grupa flex flex-col items-center gap-16 mt-10">
-      <h3 class="text-4xl font-bold text-orange-600">
+      <h3 class="text-4xl font-bold text-orange-600 pt-20" id="algebragrupa">
         <i class="fas fa-users"></i> Algebra grupa
       </h3>
-      <div
-        class="w-full mx-auto flex flex-col gap-14 pl-32 pr-32 pt-24 pb-24 bg-gray-500"
-      >
-        <p class="text-2xl font-custom-font">
+      <div class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500">
+        <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Algebra grupa je vodeći hrvatski i regionalni privatni obrazovni
           sustav prisutan u 30 gradova diljem Republike Hrvatske, s više od 120
           stalno zaposlenih i više od 400 vanjskih suradnika.
         </p>
-        <p class="text-2xl font-custom-font">
+        <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Kroz proteklih gotovo 20 godina rada, Algebra je postala najznačajniji
           regionalni edukacijski partner tvrtki Microsoft, Cisco, Adobe,
           Autodesk, ECDL, VMware, EC-Council i drugih. U obrazovanju odraslih
@@ -375,48 +375,96 @@
           godine.
         </p>
       </div>
-      <div class="grid grid-cols-4 gap-4 pl-16 pr-16">
+      <div class="grid grid-cols-1 gap-4 pl-16 pr-16 lg:grid-cols-4">
         <div class="border-2 border-black p-4">
           <h4 class="text-xl font-bold">
             EC-Council Accredited Training Center - kreditirani trening centar
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <img
+            src="../VUA_SUPIT_projektni_zadatak_materials/img/EC-Council.png"
+            alt="EC-Council"
+            width="150"
+            height="150"
+            class="mx-auto"
+          />
         </div>
         <div class="border-2 border-black p-4">
           <h4 class="text-xl font-bold">
             Cisco Networking Academy, Cisco akademija mrežnih tehnologija
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <img
+            src="../VUA_SUPIT_projektni_zadatak_materials/img/1024px-Cisco_academy.png"
+            alt="EC-Council"
+            width="150"
+            height="150"
+            class="mx-auto"
+          />
         </div>
         <div class="border-2 border-black p-4">
-          <h4 class="text-xl font-bold">
-            VUE Ispitni centar za testiranje kandidata
-          </h4>
+          <!-- prettier-ignore -->
+          <h4 class="text-xl font-bold whitespace-pre-wrap">VUE Ispitni  centar  za testiranje kandidata</h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <img
+            src="../VUA_SUPIT_projektni_zadatak_materials/img/VUElogo.jpg"
+            alt="EC-Council"
+            width="150"
+            height="150"
+            class="mx-auto"
+          />
         </div>
         <div class="border-2 border-black p-4">
           <h4 class="text-xl font-bold">
             Autodesk trening centar za AutoCAD, Inventor i 3D Studio alate
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <img
+            src="../VUA_SUPIT_projektni_zadatak_materials/img/autodesk.png"
+            alt="EC-Council"
+            width="370"
+            height="270"
+            class="mx-auto"
+          />
         </div>
         <div class="border-2 border-black p-4">
           <h4 class="text-xl font-bold">
             Adobe autorizirani trening partner za grafičke i web aplikacije
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <img
+            src="../VUA_SUPIT_projektni_zadatak_materials/img/auth_training_cntr.gif"
+            alt="EC-Council"
+            width="370"
+            height="250"
+            class="mx-auto"
+          />
         </div>
         <div class="border-2 border-black p-4">
           <h4 class="text-xl font-bold">
             Microsoft Gold Certified Partner for Learning Solutions
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <img
+            src="../VUA_SUPIT_projektni_zadatak_materials/img/ms_novo.png"
+            alt="EC-Council"
+            width="250"
+            height="250"
+            class="mx-auto"
+          />
         </div>
         <div class="border-2 border-black p-4">
           <h4 class="text-xl font-bold">
             Red Hat Akademija – podržava nastavu i certifikacijske ispite
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <img
+            src="../VUA_SUPIT_projektni_zadatak_materials/img/redhatLogo.png"
+            alt="EC-Council"
+            width="350"
+            height="250"
+            class="mx-auto"
+          />
         </div>
         <div class="border-2 border-black p-4">
           <h4 class="text-xl font-bold">
@@ -424,15 +472,24 @@
             edukacije
           </h4>
           <div class="border-2 border-black w-full rounded mt-2 mb-2"></div>
+          <img
+            src="../VUA_SUPIT_projektni_zadatak_materials/img/oracleLogo.png"
+            alt="EC-Council"
+            width="450"
+            height="250"
+            class="mx-auto"
+          />
         </div>
       </div>
     </div>
 
     <div class="kako-do-nas flex flex-col items-center gap-16 mt-10">
-      <h3 class="text-4xl font-bold text-orange-600">
+      <h3 class="text-4xl font-bold text-orange-600 pt-20" id="kakodonas">
         <i class="far fa-compass"></i> Kako do nas?
       </h3>
-      <div class="grid grid-cols-2 pl-16 pr-16 gap-4 bg-kako-do-nas">
+      <div
+        class="grid grid-cols-1 pl-16 pr-16 gap-4 bg-kako-do-nas lg:grid-cols-2"
+      >
         <div class="border-2 border-black p-4 rounded bg-white">
           <h4 class="mb-6 text-xl font-bold">
             <i class="fas fa-location-arrow"></i> Lokacija
@@ -481,7 +538,7 @@
             parkirna zona Zagrebparkinga.
           </p>
         </div>
-        <div class="col-span-2">
+        <div class="col-span-1 lg:col-span-2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31459.98835279761!2d15.912104774727695!3d45.81733860367186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6d74e265877%3A0x1a4f4eae9fc461c5!2sAlgebra%20University%20College!5e0!3m2!1sen!2shr!4v1644094551332!5m2!1sen!2shr"
             width="100%"
