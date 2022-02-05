@@ -84,7 +84,6 @@ const calculateValues = () => {
     ects += parseInt(table.rows[i].cells[1].innerHTML);
     hours += parseInt(table.rows[i].cells[2].innerHTML);
   }
-  console.log(ects, hours);
   document.querySelector("#ects").textContent = ects;
   document.querySelector("#hours").textContent = hours;
 };

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../tailwind/tailwind.css" />
     <link rel="stylesheet" href="../css/modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <script
       src="https://kit.fontawesome.com/7ac9d32f19.js"
       crossorigin="anonymous"
@@ -88,73 +92,75 @@
       </div>
     </nav>
 
+    <div class="pt-12 w-full h-96 overflow-hidden flex">
+      <div class="absolute z-10 w-full h-auto flex justify-center items-center">
+        <h1
+          class="text-white font-bold text-2xl w-1/2 pt-28 md:text-4xl md:pt-32"
+        >
+          Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje
+          izvrsnosti.
+        </h1>
+      </div>
+      <img
+        src="../VUA_SUPIT_projektni_zadatak_materials/img/novost1.jpg"
+        alt="Zaiski Slika"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
     <div class="pt-24 flex flex-col items-center">
-      <h2 class="text-black text-5xl">Novosti</h2>
+      <h2 class="text-black text-5xl font-bold">
+        WorldSkills natjecanje - Kazan 2019.
+      </h2>
       <div class="border-2 border-red-500 w-1/2 rounded mt-8"></div>
     </div>
 
-    <div
-      class="flex flex-col items-center gap-5 justify-around pt-12 md:flex-row"
-    >
-      <a href="./news-one.html">
-        <div
-          class="relative overflow-hidden rounded-full shadow-xl shadow-gray-700 border-8 border-orange-300"
-          style="height: 280px; width: 280px"
-        >
-          <h2
-            class="absolute text-center mt-6 overflow-auto w-auto text-white font-bold p-6"
-          >
-            <span class="text-yellow-500">28.08.2019</span>
-            <br />
-            Student Josip Stanešić 12. je sistemaš svijeta dobitnik medalje
-            izvrsnosti na natjecanju WorldSkills Kazan 2019.
-          </h2>
-          <img
-            src="../VUA_SUPIT_projektni_zadatak_materials/img/novost1.jpg"
-            alt="News 1"
-            class="w-auto h-full object-cover"
-          />
-        </div>
-      </a>
-      <a href="./news-two.html">
-        <div
-          class="relative overflow-hidden rounded-full shadow-xl shadow-gray-700 border-8 border-orange-200"
-          style="height: 280px; width: 280px"
-        >
-          <h2
-            class="absolute text-center mt-8 overflow-auto w-auto text-white font-bold p-6"
-          >
-            <span class="text-yellow-500">22.07.2019</span>
-            <br />
-            Nagrađujemo izvrsnost: Objavljujemo dobitnike stipendijskog
-            natječaja šk. god. 2018 i 2019.
-          </h2>
-          <img
-            src="../VUA_SUPIT_projektni_zadatak_materials/img/novost2.jpg"
-            alt="News 2"
-            class="w-auto h-full object-cover"
-          />
-        </div>
-      </a>
-      <a href="./news-three.html">
-        <div
-          class="relative overflow-hidden rounded-full shadow-xl shadow-gray-700 border-8 border-orange-200"
-          style="height: 280px; width: 280px"
-        >
-          <h2
-            class="absolute text-center mt-20 ml-8 overflow-auto w-auto text-white font-bold p-6"
-          >
-            <span class="text-yellow-500">18.04.2019</span>
-            <br />
-            Digitalno Junior ljeto
-          </h2>
-          <img
-            src="../VUA_SUPIT_projektni_zadatak_materials/img/novost3.jpg"
-            alt="News 3"
-            class="w-auto h-full object-cover"
-          />
-        </div>
-      </a>
+    <div class="w-1/2 mx-auto mt-12">
+      <p class="text-xl">
+        Nakon velikog broja prijava koje smo primili, detaljnom analizom i
+        provjerom utvrdili smo dobitnike ovogodišnjeg stipendijskog natječaja za
+        maturante! Stipendiju u vrijednosti od 10.000,00 kuna na potrošačkoj
+        kartici dobivaju: Heidi Sokolovski iz Zagreba - za najbolji rezultat iz
+        Matematike na A razini osvojila je stipendiju u iznosu od 10.000,00 kn.
+        Tereza Žugaj iz Zagreba - za najbolji rezultat iz Matematike na B razini
+        osvojila je stipendiju u iznosu od 10.000,00 kn. Dalija Romac iz Sinja -
+        za najbolji rezultat iz Hrvatskog jezika na A razini te dodatna 204 boda
+        za rezultat iz Matematike A i Engleskog jezika A osvojila je stipendiju
+        u iznosu od 10.000,00 kn. Ella Milinović iz Zagreba - za najbolji
+        rezultat iz Hrvatskog jezika na B razini osvojila je stipendiju u iznosu
+        od 10.000,00 kn. Borna Skračić iz Zadra – za najbolji rezultat iz
+        Engleskog jezika na A razini osvojio je stipendiju u iznosu od 10.000,00
+        kn. Lukas Božić iz Umaga - za najbolji rezultat iz Engleskog jezika na B
+        razini osvojio je stipendiju u iznosu od 10.000,00 kn.
+      </p>
+    </div>
+
+    <div class="flex flex-row gap-2 mt-8 justify-center">
+      <a
+        data-fancybox="gallery"
+        href="../VUA_SUPIT_projektni_zadatak_materials/img/galerija1.jpg"
+        ><img
+          src="../VUA_SUPIT_projektni_zadatak_materials/img/galerija1.jpg"
+          alt="Galerija 1"
+          style="width: 400px; height: 90%"
+      /></a>
+      <a
+        data-fancybox="gallery"
+        href="../VUA_SUPIT_projektni_zadatak_materials/img/galerija2.jpg"
+        ><img
+          src="../VUA_SUPIT_projektni_zadatak_materials/img/galerija2.jpg"
+          alt="Galerija 2"
+          style="width: 400px; height: 90%"
+      /></a>
+    </div>
+
+    <div class="flex justify-center mt-8">
+      <video width="500" height="340" controls>
+        <source
+          src="../VUA_SUPIT_projektni_zadatak_materials/video/worldskills.mp4"
+          type="video/mp4"
+        />
+      </video>
     </div>
 
     <footer
@@ -240,4 +246,5 @@
     </div>
   </body>
   <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </html>
