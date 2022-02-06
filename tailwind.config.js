@@ -18,6 +18,15 @@ module.exports = {
         "kako-do-nas":
           "url('../VUA_SUPIT_projektni_zadatak_materials/img/kakoDoNas.jpg')",
       },
+      animation: {
+        flyIn: "flyIn 2s ease-in-out",
+      },
+      keyframes: {
+        flyIn: {
+          "0%": { transform: "translateX(-200%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
     },
   },
   plugins: [],
