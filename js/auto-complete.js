@@ -79,7 +79,7 @@ const calculateValues = () => {
   let table = document.querySelector(".subject-table");
   let ects = 0;
   let hours = 0;
-  for (let i = 1; i < table.rows.length-1; i++) {
+  for (let i = 1; i < table.rows.length - 1; i++) {
     console.log(table.rows[i].cells[1].innerHTML);
     ects += parseInt(table.rows[i].cells[1].innerHTML);
     hours += parseInt(table.rows[i].cells[2].innerHTML);
