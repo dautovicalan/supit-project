@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../VUA_SUPIT_projektni_zadatak_materials/img/favicon.ico">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../VUA_SUPIT_projektni_zadatak_materials/img/favicon.ico"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../tailwind/tailwind.css" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../css/modal.css" />
@@ -18,6 +23,7 @@
       src="https://kit.fontawesome.com/7ac9d32f19.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>About Us</title>
   </head>
   <body>
@@ -108,7 +114,7 @@
       </div>
     </nav>
 
-    <div class="pt-12 w-full h-96 overflow-hidden flex">
+    <div class="pt-12 w-full h-96 overflow-hidden flex animate-flyInAbove">
       <img
         src="../VUA_SUPIT_projektni_zadatak_materials/img/kampus-iz-zraka-min-1.jpg"
         alt="Kampus iz Zraka"
@@ -116,7 +122,7 @@
       />
     </div>
 
-    <div class="pt-20 flex flex-col items-center">
+    <div class="pt-20 flex flex-col items-center animate-flyIn">
       <h2 class="text-black text-5xl font-bold">O nama</h2>
       <div class="border-2 border-red-500 w-1/2 rounded mt-8"></div>
     </div>
@@ -125,7 +131,9 @@
       <h3 class="text-4xl font-bold text-orange-600 pt-20" id="nasevrijednosti">
         <i class="fas fa-bolt"></i> Naše vrijednosti
       </h3>
-      <div class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500">
+      <div
+        class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500 animate-flyIn"
+      >
         <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Obećajemo pomoć u pronalasku onoga što voliš raditi i da ćemo te
           poticati na izvrsnost - kvalitetom programa i procesa, strastvenim
@@ -188,11 +196,14 @@
       </div>
     </div>
 
-    <div class="history-container flex flex-col items-center gap-16 mt-10">
+    <div class="povijest-container flex flex-col items-center gap-16 mt-10">
       <h3 class="text-4xl font-bold text-orange-600 pt-20" id="povijest">
         <i class="fas fa-history"></i> Povijest
       </h3>
-      <div class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500">
+      <div
+        class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500"
+        data-aos="fade-right"
+      >
         <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Zajedno gradimo povijest Algebre. Počeli smo prije gotovo dvadeset
           godina i s tobom nastavljamo put prema novim uspjesima.
@@ -358,7 +369,10 @@ Algebra</h4>
       <h3 class="text-4xl font-bold text-orange-600 pt-20" id="algebragrupa">
         <i class="fas fa-users"></i> Algebra grupa
       </h3>
-      <div class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500">
+      <div
+        class="w-full mx-auto flex flex-col gap-14 pt-24 pb-24 bg-gray-500"
+        data-aos="fade-right"
+      >
         <p class="text-2xl font-custom-font w-3/4 mx-auto">
           Algebra grupa je vodeći hrvatski i regionalni privatni obrazovni
           sustav prisutan u 30 gradova diljem Republike Hrvatske, s više od 120
@@ -489,6 +503,7 @@ Algebra</h4>
         <i class="far fa-compass"></i> Kako do nas?
       </h3>
       <div
+        data-aos="fade-right"
         class="grid grid-cols-1 pl-16 pr-16 gap-4 bg-kako-do-nas lg:grid-cols-2"
       >
         <div class="border-2 border-black p-4 rounded bg-white">
@@ -634,5 +649,8 @@ Algebra</h4>
       </div>
     </div>
   </body>
+  <script>
+    AOS.init();
+  </script>
   <script src="../js/script.js"></script>
 </html>

@@ -642,6 +642,31 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: flyIn 2s ease-in-out;
 }
 
+@-webkit-keyframes flyInAbove {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes flyInAbove {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-flyInAbove {
+  -webkit-animation: flyInAbove 1s ease-in-out;
+          animation: flyInAbove 1s ease-in-out;
+}
+
 .resize-y {
   resize: vertical;
 }
