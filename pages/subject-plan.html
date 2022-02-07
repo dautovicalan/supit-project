@@ -100,37 +100,37 @@
     <div
       class="flex flex-col justify-around gap-16 pt-12 pl-20 pr-20 lg:flex-row lg:gap-10"
     >
-      <div class="flex flex-col">
-        <label for="search-subject">Unesi Predmet:</label>
+      <div class="flex flex-col animate-flyIn">
+        <label for="search-subject" class="text-lg font-bold font-custom-font"
+          >Unesi Predmet:</label
+        >
         <input
           type="search"
           id="search-subject"
           placeholder="Unesi ime predmeta..."
-          class="w-auto p-3 rounded-lg resize-y mb-3 border-2 border-black"
+          class="w-full p-3 rounded-lg mb-3 border-2 border-black text-lg"
         />
         <div id="match-list"></div>
       </div>
-      <table
-        class="subject-table border-collapse border-2 border-black text-center"
-      >
-        <thead class="border-2 border-black">
+      <table class="subject-table content-end h-fit flex-initial">
+        <thead class="bg-orange-300">
           <tr>
-            <th>KOLEGIJ</th>
-            <th>ECTS</th>
-            <th>SATI</th>
-            <th>PREDAVANJA</th>
-            <th>VJEZBE</th>
-            <th>TIP</th>
-            <th>SEMESTAR</th>
-            <th></th>
+            <th class="px-6 py-2 text-xs text-gray-500">KOLEGIJ</th>
+            <th class="px-6 py-2 text-xs text-gray-500">ECTS</th>
+            <th class="px-6 py-2 text-xs text-gray-500">SATI</th>
+            <th class="px-6 py-2 text-xs text-gray-500">PREDAVANJA</th>
+            <th class="px-6 py-2 text-xs text-gray-500">VJEZBE</th>
+            <th class="px-6 py-2 text-xs text-gray-500">TIP</th>
+            <th class="px-6 py-2 text-xs text-gray-500">SEMESTAR</th>
+            <th class="px-6 py-2 text-xs text-gray-500"></th>
           </tr>
         </thead>
         <tbody></tbody>
-        <tfoot class="border-2 border-black">
+        <tfoot class="bg-orange-300">
           <tr>
-            <th>UKUPNO</th>
-            <th id="ects">0</th>
-            <th id="hours">0</th>
+            <th class="px-6 py-2 text-xs text-gray-500">UKUPNO</th>
+            <th class="px-6 py-2 text-xs text-gray-500" id="ects">0</th>
+            <th class="px-6 py-2 text-xs text-gray-500" id="hours">0</th>
           </tr>
         </tfoot>
       </table>

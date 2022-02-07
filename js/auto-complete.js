@@ -27,14 +27,12 @@ const outputHtml = (matches) => {
     const html = matches
       .map(
         (match) => `
-            <div class="hover:cursor-pointer" onclick="getSubjectInfo(this)" data-subjectid="${match.value}" data-subjectname="${match.label}">
+            <div class="hover:cursor-pointer text-lg border-2 border-red-500 w-auto p-2 mb-2 hover:border-orange-500 rounded" onclick="getSubjectInfo(this)" data-subjectid="${match.value}" data-subjectname="${match.label}">
                 <h4>${match.label}</h4>
             </div>
         `
       )
       .join("");
-
-    console.log(html);
     matchList.innerHTML = html;
   }
 };
@@ -54,15 +52,15 @@ const getSubjectInfo = async (element) => {
 const insertInTable = (data) => {
   const { kolegij, ects, sati, predavanja, vjezbe, tip, semestar } = data;
   let createTableRow = `
-    <tr>
-        <td>${kolegij}</td>
-        <td>${ects}</td>
-        <td>${sati}</td>
-        <td>${predavanja}</td>
-        <td>${vjezbe}</td>
-        <td>${tip}</td>
-        <td>${semestar}</td>
-        <td><input type="button" value="Izbrisi" onclick="removeItem(event)" class="bg-red-500 text-white p-2 rounded-lg text-lg hover:cursor-pointer"/></td>
+    <tr class="whitespace-nowrap">
+        <td class="px-6 py-4 text-sm text-gray-500 text-center">${kolegij}</td>
+        <td class="px-6 py-4 text-sm text-gray-500 text-center">${ects}</td>
+        <td class="px-6 py-4 text-sm text-gray-500 text-center">${sati}</td>
+        <td class="px-6 py-4 text-sm text-gray-500 text-center">${predavanja}</td>
+        <td class="px-6 py-4 text-sm text-gray-500 text-center">${vjezbe}</td>
+        <td class="px-6 py-4 text-sm text-gray-500 text-center">${tip}</td>
+        <td class="px-6 py-4 text-sm text-gray-500 text-center">${semestar}</td>
+        <td class="px-6 py-4 text-sm text-gray-500"><input type="button" value="Izbrisi" onclick="removeItem(event)" class="bg-red-500 text-white p-2 rounded-lg text-lg hover:cursor-pointer"/></td>
     </tr>
   `;
 
